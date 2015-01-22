@@ -9,18 +9,19 @@ public class RPN {
 	Stack<Integer> evaluate(String expression) {
 		StringReader sr = new StringReader(expression);
 		Scanner scanner = new Scanner(sr);
+		String token;
 		while (scanner.hasNext()) {
-			String token =scanner.next();
+			token =scanner.next();
 			//check for +,-,/,*
 			if (token.equals("+"))
 				// do the appropriate thing
 				// pop 2 items off stack, and place result onto stack
 			Integer.parseInt(token);
+			//catch all case
+			//put the integer on the stack
+			Integer.parseInt(token); 
 		}
 		
-		//catch all case
-		//put the integer on the stack
-		Integer.parseInt(token); 
 		
 		return stack;
 	}

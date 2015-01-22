@@ -33,6 +33,9 @@ public class Index<Something> {
 		
 		index.get(entry).add(location);
 		
+		// No matter what, we need to add to an entry
+		// the location
+		index.get(entry).add(location);
 	}
 	
 	/**
