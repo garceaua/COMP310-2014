@@ -4,22 +4,51 @@ import java.util.Stack;
 
 
 public class RPN {
-	Stack<Integer> stack =new Stack<Integer>();
 	
+	int operand1;
+	int operand2;
+	char op;
+	
+	Stack<Integer> stack =new Stack<Integer>();
 	Stack<Integer> evaluate(String expression) {
 		StringReader sr = new StringReader(expression);
 		Scanner scanner = new Scanner(sr);
 		String token;
+		//String op = "+-*/"; 
+		
 		while (scanner.hasNext()) {
 			token =scanner.next();
-			//check for +,-,/,*
-			if (token.equals("+"))
-				// do the appropriate thing
-				// pop 2 items off stack, and place result onto stack
-			Integer.parseInt(token);
-			//catch all case
-			//put the integer on the stack
-			Integer.parseInt(token); 
+			//stack.push();
+			
+			switch(token){
+			case "+":
+				operand2=stack.pop();
+				operand1=stack.pop();
+				stack.push(operand2 + operand1);
+				break;
+			case "-": 
+				operand2=stack.pop();
+				operand1=stack.pop();
+				stack.push(operand2 - operand1);
+				break;
+			case "*":
+				operand2=stack.pop();
+				operand1=stack.pop();
+				stack.push(operand2 * operand1);
+				break;
+			case "/":
+				operand2=stack.pop();
+				operand1=stack.pop();
+				stack.push(operand2 / operand1);
+				break;
+			default: 
+				int x=Integer.parseInt(token);
+				stack.push(x);
+			
+		}
+			
+			
+				
 		}
 		
 		
