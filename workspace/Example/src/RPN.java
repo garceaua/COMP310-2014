@@ -54,4 +54,7 @@ public class RPN {
 		
 		return stack;
 	}
+	void clear() {
+		stack.clear();
+	}
 }
