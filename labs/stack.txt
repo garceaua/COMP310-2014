@@ -1,0 +1,10 @@
+Stack
+Bottom on stack, grows upwards
+push stuff onto the stack, pull stuff off, determine if empty, peek it off. 
+
+2+3*7= 23   Infix
+
+3 7* 2+ =23 Postfix
+
+(2+3)*7  Infix
+2 3+7*   Postfix
