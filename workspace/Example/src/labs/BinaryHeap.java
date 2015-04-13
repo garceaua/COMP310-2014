@@ -2,7 +2,7 @@ package labs;
 
 import java.util.Arrays;
 import java.util.NoSuchElementException;
-
+  
 // http://en.wikipedia.org/wiki/Binary_heap
 //max heap
 public class BinaryHeap<T extends Comparable<T>> {

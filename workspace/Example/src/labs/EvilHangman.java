@@ -15,7 +15,7 @@ import java.util.Scanner;
  * Details here:
  * http://nifty.stanford.edu/2011/schwarz-evil-hangman/Evil_Hangman.pdf
  */
-public class EvilHangman extends Hangman {
+public class EvilHangman extends Hangman { 
 	private String getWord = "";
 	private int GuessRemaining;
 	private char Guesses;
